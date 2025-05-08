@@ -1,0 +1,237 @@
+\hypertarget{classEnemy}{}\doxysection{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+Inheritance diagram for Enemy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classEnemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classEnemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classEnemy_a8ff116ec92dd0f97f079699a8eac63fd}{type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type \mbox{\hyperlink{classEnemy}{Enemy}} of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEnemy_a94f30d348b6d2840fd71675472ba38dd}\label{classEnemy_a94f30d348b6d2840fd71675472ba38dd}} 
+\mbox{\hyperlink{classEnemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEnemy}{Enemy}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnemy_ac7ff0c96dcb6b438f78b5dc4399cb183}{Enemy}} (\mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos, int p\+\_\+health, float p\+\_\+walk\+Timer)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEnemy}{Enemy}} object with the given parameters. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEnemy_a3473f9f24e815aebb44c85943204d31c}{get\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Get the Health of \mbox{\hyperlink{classEnemy}{Enemy}} object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEnemy_a46b0b785a7ee886a5dd5c623a7aff74f}{get\+Max\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Get the Max Health object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classEnemy_a8e7580e7bac08e89a7bacbdfe30ad799}{get\+Frame\+Timer}} () const
+\begin{DoxyCompactList}\small\item\em Get the Frame Timer object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_ab63d94f8f07cffa4fd0f797ee106cc51}{set\+Frame\+Timer}} (float p\+\_\+frame\+Timer)
+\begin{DoxyCompactList}\small\item\em Set the Frame Timer object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEnemy_adfb258d4dc51bc6a4ed223a041338d99}{damage}} (int p\+\_\+health)
+\begin{DoxyCompactList}\small\item\em Damage the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEnemy_a518a8371304a2b678a65d56ac830eafa}{is\+Dead}} () const
+\begin{DoxyCompactList}\small\item\em get to know is the \mbox{\hyperlink{classEnemy}{Enemy}} is dead \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classEnemy_a3921e1217a035bcce298ffa3a15b1b21}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} dir, float dt, \mbox{\hyperlink{classMap}{Map}} \&map, int cur\+Index)
+\begin{DoxyCompactList}\small\item\em update the \mbox{\hyperlink{classEnemy}{Enemy}} object \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEnemy_a801862d4daaa5f95f774444934573cb1}{is\+Walkable}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if entity can be walked on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnemy_ac7ff0c96dcb6b438f78b5dc4399cb183}\label{classEnemy_ac7ff0c96dcb6b438f78b5dc4399cb183}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos,  }\item[{int}]{p\+\_\+health,  }\item[{float}]{p\+\_\+walk\+Timer }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classEnemy}{Enemy}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pos} & the position of the enemy \\
+\hline
+{\em p\+\_\+health} & the health of the enemy \\
+\hline
+{\em p\+\_\+walk\+Timer} & the walk timer of the enemy(how many time will the enemy stay in place at the beginning) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnemy_adfb258d4dc51bc6a4ed223a041338d99}\label{classEnemy_adfb258d4dc51bc6a4ed223a041338d99}} 
+\index{Enemy@{Enemy}!damage@{damage}}
+\index{damage@{damage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily void Enemy\+::damage (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+health }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Damage the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+health} & the health of the enemy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_ad62a7df3600b4ecdab194b606ae942e9}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a8e7580e7bac08e89a7bacbdfe30ad799}\label{classEnemy_a8e7580e7bac08e89a7bacbdfe30ad799}} 
+\index{Enemy@{Enemy}!getFrameTimer@{getFrameTimer}}
+\index{getFrameTimer@{getFrameTimer}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getFrameTimer()}{getFrameTimer()}}
+{\footnotesize\ttfamily float Enemy\+::get\+Frame\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Frame Timer object. 
+
+\begin{DoxyReturn}{Returns}
+float the frame timer of the enemy 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_aae1ca1c6c03d92c3167b1cb0b335c790}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a3473f9f24e815aebb44c85943204d31c}\label{classEnemy_a3473f9f24e815aebb44c85943204d31c}} 
+\index{Enemy@{Enemy}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Health of \mbox{\hyperlink{classEnemy}{Enemy}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the health of the enemy 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a56685d307e693f83149ec1fd47ce6cff}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a46b0b785a7ee886a5dd5c623a7aff74f}\label{classEnemy_a46b0b785a7ee886a5dd5c623a7aff74f}} 
+\index{Enemy@{Enemy}!getMaxHealth@{getMaxHealth}}
+\index{getMaxHealth@{getMaxHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getMaxHealth()}{getMaxHealth()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Max\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Max Health object. 
+
+\begin{DoxyReturn}{Returns}
+int the max health of the enemy 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_af540b6b54f86c2ca8c89eaa92607ef50}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a518a8371304a2b678a65d56ac830eafa}\label{classEnemy_a518a8371304a2b678a65d56ac830eafa}} 
+\index{Enemy@{Enemy}!isDead@{isDead}}
+\index{isDead@{isDead}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get to know is the \mbox{\hyperlink{classEnemy}{Enemy}} is dead 
+
+\begin{DoxyReturn}{Returns}
+bool true if the enemy is dead and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a801862d4daaa5f95f774444934573cb1}\label{classEnemy_a801862d4daaa5f95f774444934573cb1}} 
+\index{Enemy@{Enemy}!isWalkable@{isWalkable}}
+\index{isWalkable@{isWalkable}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isWalkable()}{isWalkable()}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Walkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if entity can be walked on. 
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a2e547bb6809b78266d9e218ca09a198c}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_ab63d94f8f07cffa4fd0f797ee106cc51}\label{classEnemy_ab63d94f8f07cffa4fd0f797ee106cc51}} 
+\index{Enemy@{Enemy}!setFrameTimer@{setFrameTimer}}
+\index{setFrameTimer@{setFrameTimer}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setFrameTimer()}{setFrameTimer()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Frame\+Timer (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+frame\+Timer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Frame Timer object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+frame\+Timer} & the frame timer of the enemy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a82f2280597234a096900331fe112b80b}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a8ff116ec92dd0f97f079699a8eac63fd}\label{classEnemy_a8ff116ec92dd0f97f079699a8eac63fd}} 
+\index{Enemy@{Enemy}!type@{type}}
+\index{type@{type}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual int Enemy\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type \mbox{\hyperlink{classEnemy}{Enemy}} of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{Entity}}.
+
+\mbox{\Hypertarget{classEnemy_a3921e1217a035bcce298ffa3a15b1b21}\label{classEnemy_a3921e1217a035bcce298ffa3a15b1b21}} 
+\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Enemy\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{dir,  }\item[{float}]{dt,  }\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map,  }\item[{int}]{cur\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update the \mbox{\hyperlink{classEnemy}{Enemy}} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+health} & the health of the enemy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a67fb989333c3a414038b88153eae4326}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Enemy.\+h\item 
+src/enemy.\+cpp\end{DoxyCompactItemize}

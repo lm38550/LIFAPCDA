@@ -1,0 +1,443 @@
+\hypertarget{classEntity}{}\doxysection{Entity Class Reference}
+\label{classEntity}\index{Entity@{Entity}}
+
+
+Inheritance diagram for Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEntity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classEntity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{type}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Type of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEntity_a56685d307e693f83149ec1fd47ce6cff}{get\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Get the Health of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEntity_af540b6b54f86c2ca8c89eaa92607ef50}{get\+Max\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Get the Max Health object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a980f368aa07ce358583982821533a54a}\label{classEntity_a980f368aa07ce358583982821533a54a}} 
+\mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_a02a94867df619caa34742b989919c3e7}{Entity}} (\mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEntity}{Entity}} object with the given parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classEntity_a42042cc07c8938a6afe266d3abc33f55}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Get the Pos object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_aa8f459d0c5b0ae453b50459442bf5988}{is\+Visible}} () const
+\begin{DoxyCompactList}\small\item\em see if the entity is visible \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a9fce779f31167ebeb8cac699f489e8f5}{set\+Pos}} (\mbox{\hyperlink{classVec2f}{Vec2f}} new\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Set the Pos object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_afa74d0a2e7201e8e0e8203c9c2853e73}\label{classEntity_afa74d0a2e7201e8e0e8203c9c2853e73}} 
+virtual void \mbox{\hyperlink{classEntity_afa74d0a2e7201e8e0e8203c9c2853e73}{exploded}} ()
+\begin{DoxyCompactList}\small\item\em Exploded the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classEntity_a67fb989333c3a414038b88153eae4326}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} dir, float dt, \mbox{\hyperlink{classMap}{Map}} \&map, int cur\+Index)
+\begin{DoxyCompactList}\small\item\em update the \mbox{\hyperlink{classEntity}{Entity}} object \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEntity_a2e547bb6809b78266d9e218ca09a198c}{is\+Walkable}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if entity can be walked on. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_ad62a7df3600b4ecdab194b606ae942e9}{damage}} (int p\+\_\+health)
+\begin{DoxyCompactList}\small\item\em Damage the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}{is\+Dead}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if an entity is dead. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEntity_a1ed850a9eae0b7c770ecb1b20e27256c}{get\+Equipped}} () const
+\begin{DoxyCompactList}\small\item\em Get the Equipped object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_ab121c7ebafbc69daa33c413b1b8ed93a}{set\+Equipped}} (int p\+\_\+equipped)
+\begin{DoxyCompactList}\small\item\em Set the Equipped object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classEntity_addbae00214c8dc08e1bde7b2c5ed50b8}{is\+Exploding}} () const
+\begin{DoxyCompactList}\small\item\em Get if the bomb is exploding. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classEntity_adc0edca6643007cd8ab744b6e2a01846}{get\+Timer}} () const
+\begin{DoxyCompactList}\small\item\em Get timer of \mbox{\hyperlink{classFire}{Fire}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classEntity_acea97aa0b5b4d2121d5787c923d7c321}{get\+Player\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classPlayer}{Player}} Dir object. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classEntity_aae1ca1c6c03d92c3167b1cb0b335c790}{get\+Frame\+Timer}} () const
+\begin{DoxyCompactList}\small\item\em Get the Frame Timer object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_a82f2280597234a096900331fe112b80b}{set\+Frame\+Timer}} (float p\+\_\+frame\+Timer)
+\begin{DoxyCompactList}\small\item\em Set the Frame Timer object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classEntity_a40708f946c2957fdf593ed09ac81fbf1}{get\+Contain\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the Contain ID object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_a113ff3bb02e0deec5d80faaca10e20ba}{Interact}} (\mbox{\hyperlink{classMap}{Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Receive an interaction from player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_a82fc5113f0b0187b0a891fe9c5737b40}\label{classEntity_a82fc5113f0b0187b0a891fe9c5737b40}} 
+\mbox{\hyperlink{classVec2f}{Vec2f}} {\bfseries pos}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_a02a94867df619caa34742b989919c3e7}\label{classEntity_a02a94867df619caa34742b989919c3e7}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classEntity}{Entity}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pos} & the position of the entity \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_ad62a7df3600b4ecdab194b606ae942e9}\label{classEntity_ad62a7df3600b4ecdab194b606ae942e9}} 
+\index{Entity@{Entity}!damage@{damage}}
+\index{damage@{damage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily void Entity\+::damage (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+health }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Damage the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+health} & the amount of health to remove \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a29a46d12f208a8224b08ebba8b4d83b9}{Player}}, and \mbox{\hyperlink{classEnemy_adfb258d4dc51bc6a4ed223a041338d99}{Enemy}}.
+
+\mbox{\Hypertarget{classEntity_a40708f946c2957fdf593ed09ac81fbf1}\label{classEntity_a40708f946c2957fdf593ed09ac81fbf1}} 
+\index{Entity@{Entity}!getContainID@{getContainID}}
+\index{getContainID@{getContainID}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getContainID()}{getContainID()}}
+{\footnotesize\ttfamily int Entity\+::get\+Contain\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Contain ID object. 
+
+\begin{DoxyReturn}{Returns}
+int the id of the item contained in the entity (crash if the entity doesn\textquotesingle{}t contain an item) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classChest_a11a7b32aa9ed6979b89aa9f9c646e869}{Chest}}.
+
+\mbox{\Hypertarget{classEntity_a1ed850a9eae0b7c770ecb1b20e27256c}\label{classEntity_a1ed850a9eae0b7c770ecb1b20e27256c}} 
+\index{Entity@{Entity}!getEquipped@{getEquipped}}
+\index{getEquipped@{getEquipped}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getEquipped()}{getEquipped()}}
+{\footnotesize\ttfamily int Entity\+::get\+Equipped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Equipped object. 
+
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have equipped 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a7140e90e3970e1962740eb089ca2ae39}{Player}}.
+
+\mbox{\Hypertarget{classEntity_aae1ca1c6c03d92c3167b1cb0b335c790}\label{classEntity_aae1ca1c6c03d92c3167b1cb0b335c790}} 
+\index{Entity@{Entity}!getFrameTimer@{getFrameTimer}}
+\index{getFrameTimer@{getFrameTimer}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getFrameTimer()}{getFrameTimer()}}
+{\footnotesize\ttfamily float Entity\+::get\+Frame\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Frame Timer object. 
+
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have frame timer 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a14cd7f796f622572da3b9952029747b1}{Player}}, and \mbox{\hyperlink{classEnemy_a8e7580e7bac08e89a7bacbdfe30ad799}{Enemy}}.
+
+\mbox{\Hypertarget{classEntity_a56685d307e693f83149ec1fd47ce6cff}\label{classEntity_a56685d307e693f83149ec1fd47ce6cff}} 
+\index{Entity@{Entity}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Entity\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Health of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have health 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}{Player}}, and \mbox{\hyperlink{classEnemy_a3473f9f24e815aebb44c85943204d31c}{Enemy}}.
+
+\mbox{\Hypertarget{classEntity_af540b6b54f86c2ca8c89eaa92607ef50}\label{classEntity_af540b6b54f86c2ca8c89eaa92607ef50}} 
+\index{Entity@{Entity}!getMaxHealth@{getMaxHealth}}
+\index{getMaxHealth@{getMaxHealth}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getMaxHealth()}{getMaxHealth()}}
+{\footnotesize\ttfamily int Entity\+::get\+Max\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Max Health object. 
+
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have health 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a24a0506d7271d24c9c9a54e47646bb6b}{Player}}, and \mbox{\hyperlink{classEnemy_a46b0b785a7ee886a5dd5c623a7aff74f}{Enemy}}.
+
+\mbox{\Hypertarget{classEntity_acea97aa0b5b4d2121d5787c923d7c321}\label{classEntity_acea97aa0b5b4d2121d5787c923d7c321}} 
+\index{Entity@{Entity}!getPlayerDir@{getPlayerDir}}
+\index{getPlayerDir@{getPlayerDir}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getPlayerDir()}{getPlayerDir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Entity\+::get\+Player\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the \mbox{\hyperlink{classPlayer}{Player}} Dir object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}} the direction of the player (crash if the entity isn\textquotesingle{}t a player) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a345aff14a3bb8bcb3d4287a80077f309}{Player}}.
+
+\mbox{\Hypertarget{classEntity_a42042cc07c8938a6afe266d3abc33f55}\label{classEntity_a42042cc07c8938a6afe266d3abc33f55}} 
+\index{Entity@{Entity}!getPos@{getPos}}
+\index{getPos@{getPos}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Entity\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Pos object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}} the position of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_adc0edca6643007cd8ab744b6e2a01846}\label{classEntity_adc0edca6643007cd8ab744b6e2a01846}} 
+\index{Entity@{Entity}!getTimer@{getTimer}}
+\index{getTimer@{getTimer}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getTimer()}{getTimer()}}
+{\footnotesize\ttfamily float Entity\+::get\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get timer of \mbox{\hyperlink{classFire}{Fire}}. 
+
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have timer 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classFire_a20df7023ce6e5e2e60dd4e2d6e98de11}{Fire}}, and \mbox{\hyperlink{classBomb_a4ee80b2e3178a419ce6cf5ae72cd4800}{Bomb}}.
+
+\mbox{\Hypertarget{classEntity_a113ff3bb02e0deec5d80faaca10e20ba}\label{classEntity_a113ff3bb02e0deec5d80faaca10e20ba}} 
+\index{Entity@{Entity}!Interact@{Interact}}
+\index{Interact@{Interact}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Entity\+::\+Interact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receive an interaction from player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map of the game\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+do nothing by default 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classChest_af02ac37ce5c5ae5558eece9fa5eb57b0}{Chest}}.
+
+\mbox{\Hypertarget{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}\label{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}} 
+\index{Entity@{Entity}!isDead@{isDead}}
+\index{isDead@{isDead}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Entity\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if an entity is dead. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity is dead and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a20665e4647baa8f898a62021e6204450}{Player}}, \mbox{\hyperlink{classFire_ada1bb6d4467b3fa76308a0da1ef04f84}{Fire}}, \mbox{\hyperlink{classEnemy_a518a8371304a2b678a65d56ac830eafa}{Enemy}}, \mbox{\hyperlink{classCollectible_a216dfe0dbe3a58cbfe8a0a076902836b}{Collectible}}, \mbox{\hyperlink{classBomb_ace0cb80bf0bfad1682d8d81d133919b6}{Bomb}}, and \mbox{\hyperlink{classArrow_a1920bcf031207b7d4d1f1fbba270894d}{Arrow}}.
+
+\mbox{\Hypertarget{classEntity_addbae00214c8dc08e1bde7b2c5ed50b8}\label{classEntity_addbae00214c8dc08e1bde7b2c5ed50b8}} 
+\index{Entity@{Entity}!isExploding@{isExploding}}
+\index{isExploding@{isExploding}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{isExploding()}{isExploding()}}
+{\footnotesize\ttfamily bool Entity\+::is\+Exploding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get if the bomb is exploding. 
+
+\begin{DoxyReturn}{Returns}
+crash if the entity isn\textquotesingle{}t a bomb 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classBomb_a5837c0d60aea3b599a6277af9a98d727}{Bomb}}.
+
+\mbox{\Hypertarget{classEntity_aa8f459d0c5b0ae453b50459442bf5988}\label{classEntity_aa8f459d0c5b0ae453b50459442bf5988}} 
+\index{Entity@{Entity}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{isVisible()}{isVisible()}}
+{\footnotesize\ttfamily bool Entity\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+see if the entity is visible 
+
+\begin{DoxyReturn}{Returns}
+true by default 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a2e547bb6809b78266d9e218ca09a198c}\label{classEntity_a2e547bb6809b78266d9e218ca09a198c}} 
+\index{Entity@{Entity}!isWalkable@{isWalkable}}
+\index{isWalkable@{isWalkable}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{isWalkable()}{isWalkable()}}
+{\footnotesize\ttfamily bool Entity\+::is\+Walkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if entity can be walked on. 
+
+\begin{DoxyReturn}{Returns}
+true by default 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a510c627fae28ac54be2c5a23dfc2713a}{Player}}, \mbox{\hyperlink{classEnemy_a801862d4daaa5f95f774444934573cb1}{Enemy}}, \mbox{\hyperlink{classChest_aa5c59fcd021e4d53e889a47dc8d06ed2}{Chest}}, and \mbox{\hyperlink{classArrow_adfc5112779958bd17dbd5e08994553c1}{Arrow}}.
+
+\mbox{\Hypertarget{classEntity_ab121c7ebafbc69daa33c413b1b8ed93a}\label{classEntity_ab121c7ebafbc69daa33c413b1b8ed93a}} 
+\index{Entity@{Entity}!setEquipped@{setEquipped}}
+\index{setEquipped@{setEquipped}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setEquipped()}{setEquipped()}}
+{\footnotesize\ttfamily void Entity\+::set\+Equipped (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+equipped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Equipped object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+equipped} & the new equipped\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have equipped 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a71791c2ad7362df6166d12df9eebdae9}{Player}}.
+
+\mbox{\Hypertarget{classEntity_a82f2280597234a096900331fe112b80b}\label{classEntity_a82f2280597234a096900331fe112b80b}} 
+\index{Entity@{Entity}!setFrameTimer@{setFrameTimer}}
+\index{setFrameTimer@{setFrameTimer}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setFrameTimer()}{setFrameTimer()}}
+{\footnotesize\ttfamily void Entity\+::set\+Frame\+Timer (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+frame\+Timer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the Frame Timer object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+frame\+Timer} & the new frame timer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+crash if the entity doesn\textquotesingle{}t have frame timer 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_ad4055092ff28501c140d526feb1c7dbd}{Player}}, and \mbox{\hyperlink{classEnemy_ab63d94f8f07cffa4fd0f797ee106cc51}{Enemy}}.
+
+\mbox{\Hypertarget{classEntity_a9fce779f31167ebeb8cac699f489e8f5}\label{classEntity_a9fce779f31167ebeb8cac699f489e8f5}} 
+\index{Entity@{Entity}!setPos@{setPos}}
+\index{setPos@{setPos}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Entity\+::set\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{new\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Set the Pos object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+pos} & the new position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a6646c0c8f6033cc670f416841606f062}\label{classEntity_a6646c0c8f6033cc670f416841606f062}} 
+\index{Entity@{Entity}!type@{type}}
+\index{type@{type}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual int Entity\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Type of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the entity 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_ad342d4c70944f9e30786382e68a4431d}{Player}}, \mbox{\hyperlink{classFire_a6a9588299bf0d6aad55bdf2ea75fa9c0}{Fire}}, \mbox{\hyperlink{classEnemy_a8ff116ec92dd0f97f079699a8eac63fd}{Enemy}}, \mbox{\hyperlink{classCollectible_affffe9216558399616c203902d8f1273}{Collectible}}, \mbox{\hyperlink{classChest_a4d2e370dddcaffa6aabc948392947680}{Chest}}, \mbox{\hyperlink{classBomb_a6accd08bd816721a392bdc1e36406c08}{Bomb}}, and \mbox{\hyperlink{classArrow_af32a36ad61f54bc497fe1beb676273aa}{Arrow}}.
+
+\mbox{\Hypertarget{classEntity_a67fb989333c3a414038b88153eae4326}\label{classEntity_a67fb989333c3a414038b88153eae4326}} 
+\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Entity\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{dir,  }\item[{float}]{dt,  }\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map,  }\item[{int}]{cur\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update the \mbox{\hyperlink{classEntity}{Entity}} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & the direction of the entity \\
+\hline
+{\em dt} & the time since the last update \\
+\hline
+{\em map} & the map of the game \\
+\hline
+{\em cur\+Index} & the index of the entity in the map\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}}(-\/1, -\/1) by default 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_ace6ee00159af5c6e61a455976ff32a8a}{Player}}, \mbox{\hyperlink{classFire_a768939819cbb213ef52462b1a802202b}{Fire}}, \mbox{\hyperlink{classEnemy_a3921e1217a035bcce298ffa3a15b1b21}{Enemy}}, \mbox{\hyperlink{classCollectible_a77c5f383f0062585b859560c2807f341}{Collectible}}, \mbox{\hyperlink{classBomb_a3cab8c7a26cc7ce3a842d3a57e0f7944}{Bomb}}, and \mbox{\hyperlink{classArrow_a2347d126b4b642a6cedc39fad8c80e03}{Arrow}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Entity.\+h\item 
+src/entity.\+cpp\end{DoxyCompactItemize}

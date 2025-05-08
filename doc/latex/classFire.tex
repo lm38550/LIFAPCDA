@@ -1,0 +1,138 @@
+\hypertarget{classFire}{}\doxysection{Fire Class Reference}
+\label{classFire}\index{Fire@{Fire}}
+
+
+Inheritance diagram for Fire\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classFire__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fire\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classFire__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classFire_a6a9588299bf0d6aad55bdf2ea75fa9c0}{type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type \mbox{\hyperlink{classFire}{Fire}} of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFire_a084894189971bd5d033241ada306658c}\label{classFire_a084894189971bd5d033241ada306658c}} 
+\mbox{\hyperlink{classFire_a084894189971bd5d033241ada306658c}{Fire}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classFire}{Fire}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFire_aed4e8e24b0e7faa36d5222a53f5a9ecb}{Fire}} (\mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos, float p\+\_\+timer)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classFire}{Fire}} object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classFire_a20df7023ce6e5e2e60dd4e2d6e98de11}{get\+Timer}} () const
+\begin{DoxyCompactList}\small\item\em Get the Timer object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFire_ada1bb6d4467b3fa76308a0da1ef04f84}{is\+Dead}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if fire is dead. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classFire_a768939819cbb213ef52462b1a802202b}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} dir, float dt, \mbox{\hyperlink{classMap}{Map}} \&map, int cur\+Index)
+\begin{DoxyCompactList}\small\item\em Update fire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFire_aed4e8e24b0e7faa36d5222a53f5a9ecb}\label{classFire_aed4e8e24b0e7faa36d5222a53f5a9ecb}} 
+\index{Fire@{Fire}!Fire@{Fire}}
+\index{Fire@{Fire}!Fire@{Fire}}
+\doxysubsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily Fire\+::\+Fire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos,  }\item[{float}]{p\+\_\+timer }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classFire}{Fire}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pos} & the position of the fire \\
+\hline
+{\em p\+\_\+timer} & the timer of the fire \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFire_a20df7023ce6e5e2e60dd4e2d6e98de11}\label{classFire_a20df7023ce6e5e2e60dd4e2d6e98de11}} 
+\index{Fire@{Fire}!getTimer@{getTimer}}
+\index{getTimer@{getTimer}!Fire@{Fire}}
+\doxysubsubsection{\texorpdfstring{getTimer()}{getTimer()}}
+{\footnotesize\ttfamily float Fire\+::get\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Timer object. 
+
+\begin{DoxyReturn}{Returns}
+float the timer of the fire in seconds 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_adc0edca6643007cd8ab744b6e2a01846}{Entity}}.
+
+\mbox{\Hypertarget{classFire_ada1bb6d4467b3fa76308a0da1ef04f84}\label{classFire_ada1bb6d4467b3fa76308a0da1ef04f84}} 
+\index{Fire@{Fire}!isDead@{isDead}}
+\index{isDead@{isDead}!Fire@{Fire}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Fire\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if fire is dead. 
+
+\begin{DoxyReturn}{Returns}
+true if the fire is dead and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}{Entity}}.
+
+\mbox{\Hypertarget{classFire_a6a9588299bf0d6aad55bdf2ea75fa9c0}\label{classFire_a6a9588299bf0d6aad55bdf2ea75fa9c0}} 
+\index{Fire@{Fire}!type@{type}}
+\index{type@{type}!Fire@{Fire}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual int Fire\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type \mbox{\hyperlink{classFire}{Fire}} of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{Entity}}.
+
+\mbox{\Hypertarget{classFire_a768939819cbb213ef52462b1a802202b}\label{classFire_a768939819cbb213ef52462b1a802202b}} 
+\index{Fire@{Fire}!update@{update}}
+\index{update@{update}!Fire@{Fire}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Fire\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{dir,  }\item[{float}]{dt,  }\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map,  }\item[{int}]{cur\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update fire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+map} & a \mbox{\hyperlink{classMap}{Map}} object that contains the map \\
+\hline
+{\em p\+\_\+delta\+Time} & a float that contains the delta time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a67fb989333c3a414038b88153eae4326}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Fire.\+h\item 
+src/fire.\+cpp\end{DoxyCompactItemize}

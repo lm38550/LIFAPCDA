@@ -1,0 +1,306 @@
+\hypertarget{classMap}{}\doxysection{Map Class Reference}
+\label{classMap}\index{Map@{Map}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMap_a0f5ad0fd4563497b4214038cbca8b582}\label{classMap_a0f5ad0fd4563497b4214038cbca8b582}} 
+\mbox{\hyperlink{classMap_a0f5ad0fd4563497b4214038cbca8b582}{Map}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMap}{Map}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_aa403fbe09394ccf39747588f5168e3b2}\label{classMap_aa403fbe09394ccf39747588f5168e3b2}} 
+\mbox{\hyperlink{classMap_aa403fbe09394ccf39747588f5168e3b2}{$\sim$\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classMap}{Map}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a50845748b44933c465530136a9ed3330}{set\+Tile}} (int x, int y, const \mbox{\hyperlink{classTile}{Tile}} \&tile)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classTile}{Tile}} object at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTile}{Tile}} \mbox{\hyperlink{classMap_a83bec4220f87f2adf2a61195a1d421c2}{get\+Tile}} (int x, int y) const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classTile}{Tile}} object at the given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_adb7fa812c80fcb76f24a196f18732f35}{set\+ID}} (int p\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Set the ID of the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMap_aa97eadd8a26641fdf1a313526d54d5ed}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the ID of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a62c6e28d966f4b9534a08b551bac73f4}{set\+Width}} (int p\+\_\+width)
+\begin{DoxyCompactList}\small\item\em Set the width of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_af2488e7534d307343cb522c84514fa8a}{set\+Height}} (int p\+\_\+height)
+\begin{DoxyCompactList}\small\item\em Set the height of the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMap_ab3181204ba96eb15b96ee1ced85e198e}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the width of the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMap_a67113f1ffac80d9a20b15fa18a58edc2}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the height of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a61265c2d0083509ea5c916124b1683f5}{add\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Add an \mbox{\hyperlink{classEntity}{Entity}} to the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_ac633a3cf8783bab576b9a46755bbfc8a}{add\+Door}} (const \mbox{\hyperlink{classDoor}{Door}} \&door)
+\begin{DoxyCompactList}\small\item\em Add a door to the map. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \& \mbox{\hyperlink{classMap_a13d898ac19782bbc234006e75cfda835}{get\+Entities}} () const
+\begin{DoxyCompactList}\small\item\em Get the entities of the map. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classDoor}{Door}} $>$ \& \mbox{\hyperlink{classMap_a851e4f835459409659a9d6a206d01c68}{get\+Doors}} ()
+\begin{DoxyCompactList}\small\item\em Get the doors of the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInventory}{Inventory}} \& \mbox{\hyperlink{classMap_a6017379088d2375fabe1b017fe4a960e}{get\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Get the inventory of the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classMap_a261825dfd6b3e9851b5a2ac619dfa516}{get\+Player\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Get the player health. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classMap_afa8620fbfe96426ea34e4da02d374aa2}{get\+Player}} () const
+\begin{DoxyCompactList}\small\item\em Get the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a782e7c46eb96486c78d956f711377aa8}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} player\+Dir, float dt)
+\begin{DoxyCompactList}\small\item\em Update the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_a359fd6c5e0ed7e5f9788b960dfbe779e}\label{classMap_a359fd6c5e0ed7e5f9788b960dfbe779e}} 
+void \mbox{\hyperlink{classMap_a359fd6c5e0ed7e5f9788b960dfbe779e}{whip\+Save}} ()
+\begin{DoxyCompactList}\small\item\em whip the save \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_af899f974552e512e3f31f27d773a7cea}\label{classMap_af899f974552e512e3f31f27d773a7cea}} 
+void \mbox{\hyperlink{classMap_af899f974552e512e3f31f27d773a7cea}{save\+Map}} ()
+\begin{DoxyCompactList}\small\item\em save the map \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_a50255c3006e1bc56af6460bd816e5c9b}\label{classMap_a50255c3006e1bc56af6460bd816e5c9b}} 
+void \mbox{\hyperlink{classMap_a50255c3006e1bc56af6460bd816e5c9b}{load\+Map}} (\mbox{\hyperlink{classVec2f}{Vec2f}} map\+ID)
+\begin{DoxyCompactList}\small\item\em Draw the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_a96ca2334e34c4fa627687580193b7123}\label{classMap_a96ca2334e34c4fa627687580193b7123}} 
+void \mbox{\hyperlink{classMap_a96ca2334e34c4fa627687580193b7123}{kill\+Entity}} (int e)
+\begin{DoxyCompactList}\small\item\em tue les entités qui doivent mourir \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMap_acda73ff0cbcdc751b3a7695e4d228b90}\label{classMap_acda73ff0cbcdc751b3a7695e4d228b90}} 
+bool {\bfseries win}
+\item 
+\mbox{\Hypertarget{classMap_a6240d22e43ed3407b62ac6a0aca03724}\label{classMap_a6240d22e43ed3407b62ac6a0aca03724}} 
+bool {\bfseries Game\+Over}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMap_ac633a3cf8783bab576b9a46755bbfc8a}\label{classMap_ac633a3cf8783bab576b9a46755bbfc8a}} 
+\index{Map@{Map}!addDoor@{addDoor}}
+\index{addDoor@{addDoor}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addDoor()}{addDoor()}}
+{\footnotesize\ttfamily void Map\+::add\+Door (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDoor}{Door}} \&}]{door }\end{DoxyParamCaption})}
+
+
+
+Add a door to the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em door} & the door to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMap_a61265c2d0083509ea5c916124b1683f5}\label{classMap_a61265c2d0083509ea5c916124b1683f5}} 
+\index{Map@{Map}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void Map\+::add\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add an \mbox{\hyperlink{classEntity}{Entity}} to the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMap_a851e4f835459409659a9d6a206d01c68}\label{classMap_a851e4f835459409659a9d6a206d01c68}} 
+\index{Map@{Map}!getDoors@{getDoors}}
+\index{getDoors@{getDoors}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getDoors()}{getDoors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDoor}{Door}} $>$ \& Map\+::get\+Doors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the doors of the map. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Door$>$ the doors of the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_a13d898ac19782bbc234006e75cfda835}\label{classMap_a13d898ac19782bbc234006e75cfda835}} 
+\index{Map@{Map}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \& Map\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the entities of the map. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity $\ast$$>$ the entities of the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_a67113f1ffac80d9a20b15fa18a58edc2}\label{classMap_a67113f1ffac80d9a20b15fa18a58edc2}} 
+\index{Map@{Map}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Map\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the height of the map. 
+
+\begin{DoxyReturn}{Returns}
+int the height of the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_aa97eadd8a26641fdf1a313526d54d5ed}\label{classMap_aa97eadd8a26641fdf1a313526d54d5ed}} 
+\index{Map@{Map}!getID@{getID}}
+\index{getID@{getID}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int Map\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the ID of the map. 
+
+\begin{DoxyReturn}{Returns}
+int the ID of the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_a6017379088d2375fabe1b017fe4a960e}\label{classMap_a6017379088d2375fabe1b017fe4a960e}} 
+\index{Map@{Map}!getInventory@{getInventory}}
+\index{getInventory@{getInventory}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getInventory()}{getInventory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInventory}{Inventory}} \& Map\+::get\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the inventory of the map. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classInventory}{Inventory}} the inventory of the player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_afa8620fbfe96426ea34e4da02d374aa2}\label{classMap_afa8620fbfe96426ea34e4da02d374aa2}} 
+\index{Map@{Map}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}} $\ast$ Map\+::get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the player. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classPlayer}{Player}} $\ast$ the player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_a261825dfd6b3e9851b5a2ac619dfa516}\label{classMap_a261825dfd6b3e9851b5a2ac619dfa516}} 
+\index{Map@{Map}!getPlayerHealth@{getPlayerHealth}}
+\index{getPlayerHealth@{getPlayerHealth}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getPlayerHealth()}{getPlayerHealth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Map\+::get\+Player\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the player health. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}} the player health and max health 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_a83bec4220f87f2adf2a61195a1d421c2}\label{classMap_a83bec4220f87f2adf2a61195a1d421c2}} 
+\index{Map@{Map}!getTile@{getTile}}
+\index{getTile@{getTile}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getTile()}{getTile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTile}{Tile}} Map\+::get\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classTile}{Tile}} object at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x position of the tile \\
+\hline
+{\em y} & the y position of the tile\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tile the tile object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_ab3181204ba96eb15b96ee1ced85e198e}\label{classMap_ab3181204ba96eb15b96ee1ced85e198e}} 
+\index{Map@{Map}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Map\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the width of the map. 
+
+\begin{DoxyReturn}{Returns}
+int the width of the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMap_af2488e7534d307343cb522c84514fa8a}\label{classMap_af2488e7534d307343cb522c84514fa8a}} 
+\index{Map@{Map}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void Map\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Set the height of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+height} & the height of the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMap_adb7fa812c80fcb76f24a196f18732f35}\label{classMap_adb7fa812c80fcb76f24a196f18732f35}} 
+\index{Map@{Map}!setID@{setID}}
+\index{setID@{setID}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily void Map\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+\+ID }\end{DoxyParamCaption})}
+
+
+
+Set the ID of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+\+ID} & the ID of the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMap_a50845748b44933c465530136a9ed3330}\label{classMap_a50845748b44933c465530136a9ed3330}} 
+\index{Map@{Map}!setTile@{setTile}}
+\index{setTile@{setTile}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setTile()}{setTile()}}
+{\footnotesize\ttfamily void Map\+::set\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const \mbox{\hyperlink{classTile}{Tile}} \&}]{tile }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classTile}{Tile}} object at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x position of the tile \\
+\hline
+{\em y} & the y position of the tile \\
+\hline
+{\em \mbox{\hyperlink{classTile}{Tile}}} & the tile object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMap_a62c6e28d966f4b9534a08b551bac73f4}\label{classMap_a62c6e28d966f4b9534a08b551bac73f4}} 
+\index{Map@{Map}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Map\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+width }\end{DoxyParamCaption})}
+
+
+
+Set the width of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+width} & the width of the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMap_a782e7c46eb96486c78d956f711377aa8}\label{classMap_a782e7c46eb96486c78d956f711377aa8}} 
+\index{Map@{Map}!update@{update}}
+\index{update@{update}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Map\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{player\+Dir,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Update the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Dir} & the direction of the player \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Map.\+h\item 
+src/map.\+cpp\end{DoxyCompactItemize}

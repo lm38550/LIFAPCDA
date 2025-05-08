@@ -1,0 +1,160 @@
+\hypertarget{classArrow}{}\doxysection{Arrow Class Reference}
+\label{classArrow}\index{Arrow@{Arrow}}
+
+
+Inheritance diagram for Arrow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classArrow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arrow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classArrow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classArrow_af32a36ad61f54bc497fe1beb676273aa}{type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type \mbox{\hyperlink{classArrow}{Arrow}} of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArrow_a34acd71904bf918ca11ebe9208739a4c}\label{classArrow_a34acd71904bf918ca11ebe9208739a4c}} 
+\mbox{\hyperlink{classArrow_a34acd71904bf918ca11ebe9208739a4c}{Arrow}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classArrow}{Arrow}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArrow_aa21328a09a5ea6b1f818337ef49cb013}{Arrow}} (\mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos, \mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+vel)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classArrow}{Arrow}} object with position and velocity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classArrow_a17722ddd2778c8149afb923d037858ee}{get\+Vel}} () const
+\begin{DoxyCompactList}\small\item\em Get the velocity of the arrow. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classArrow_a2347d126b4b642a6cedc39fad8c80e03}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} dir, float dt, \mbox{\hyperlink{classMap}{Map}} \&map, int cur\+Index)
+\begin{DoxyCompactList}\small\item\em Update \mbox{\hyperlink{classArrow}{Arrow}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classArrow_a1920bcf031207b7d4d1f1fbba270894d}{is\+Dead}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if entity is dead. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classArrow_adfc5112779958bd17dbd5e08994553c1}{is\+Walkable}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if entity can be walked on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArrow_aa21328a09a5ea6b1f818337ef49cb013}\label{classArrow_aa21328a09a5ea6b1f818337ef49cb013}} 
+\index{Arrow@{Arrow}!Arrow@{Arrow}}
+\index{Arrow@{Arrow}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{Arrow()}{Arrow()}}
+{\footnotesize\ttfamily Arrow\+::\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+vel }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classArrow}{Arrow}} object with position and velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pos} & a \mbox{\hyperlink{classVec2f}{Vec2f}} object that contains the position of the arrow \\
+\hline
+{\em p\+\_\+vel} & a \mbox{\hyperlink{classVec2f}{Vec2f}} object that contains the velocity of the arrow \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArrow_a17722ddd2778c8149afb923d037858ee}\label{classArrow_a17722ddd2778c8149afb923d037858ee}} 
+\index{Arrow@{Arrow}!getVel@{getVel}}
+\index{getVel@{getVel}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{getVel()}{getVel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Arrow\+::get\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the velocity of the arrow. 
+
+\begin{DoxyReturn}{Returns}
+the velocity of the arrow 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArrow_a1920bcf031207b7d4d1f1fbba270894d}\label{classArrow_a1920bcf031207b7d4d1f1fbba270894d}} 
+\index{Arrow@{Arrow}!isDead@{isDead}}
+\index{isDead@{isDead}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Arrow\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if entity is dead. 
+
+\begin{DoxyReturn}{Returns}
+true if the arrow is dead and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}{Entity}}.
+
+\mbox{\Hypertarget{classArrow_adfc5112779958bd17dbd5e08994553c1}\label{classArrow_adfc5112779958bd17dbd5e08994553c1}} 
+\index{Arrow@{Arrow}!isWalkable@{isWalkable}}
+\index{isWalkable@{isWalkable}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{isWalkable()}{isWalkable()}}
+{\footnotesize\ttfamily bool Arrow\+::is\+Walkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if entity can be walked on. 
+
+\begin{DoxyReturn}{Returns}
+return false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a2e547bb6809b78266d9e218ca09a198c}{Entity}}.
+
+\mbox{\Hypertarget{classArrow_af32a36ad61f54bc497fe1beb676273aa}\label{classArrow_af32a36ad61f54bc497fe1beb676273aa}} 
+\index{Arrow@{Arrow}!type@{type}}
+\index{type@{type}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual int Arrow\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type \mbox{\hyperlink{classArrow}{Arrow}} of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{Entity}}.
+
+\mbox{\Hypertarget{classArrow_a2347d126b4b642a6cedc39fad8c80e03}\label{classArrow_a2347d126b4b642a6cedc39fad8c80e03}} 
+\index{Arrow@{Arrow}!update@{update}}
+\index{update@{update}!Arrow@{Arrow}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Arrow\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{dir,  }\item[{float}]{dt,  }\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map,  }\item[{int}]{cur\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update \mbox{\hyperlink{classArrow}{Arrow}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & a \mbox{\hyperlink{classVec2f}{Vec2f}} object that contains the direction of the player \\
+\hline
+{\em dt} & a float that contains the delta time \\
+\hline
+{\em map} & a \mbox{\hyperlink{classMap}{Map}} object that contains the map \\
+\hline
+{\em cur\+Index} & an int that contains the current index of the player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}}(-\/1, -\/1) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a67fb989333c3a414038b88153eae4326}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Arrow.\+h\item 
+src/arrow.\+cpp\end{DoxyCompactItemize}

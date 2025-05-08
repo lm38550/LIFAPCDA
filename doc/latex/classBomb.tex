@@ -1,0 +1,162 @@
+\hypertarget{classBomb}{}\doxysection{Bomb Class Reference}
+\label{classBomb}\index{Bomb@{Bomb}}
+
+
+Inheritance diagram for Bomb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classBomb__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bomb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classBomb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classBomb_a6accd08bd816721a392bdc1e36406c08}{type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type \mbox{\hyperlink{classBomb}{Bomb}} of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBomb_a5805401b6cfbb451cf31ebd4851740cf}\label{classBomb_a5805401b6cfbb451cf31ebd4851740cf}} 
+\mbox{\hyperlink{classBomb_a5805401b6cfbb451cf31ebd4851740cf}{Bomb}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBomb}{Bomb}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBomb_aa8f2eb81293b6526e6f65f42829ff171}{Bomb}} (\mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBomb}{Bomb}} object with position. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBomb_a4ee80b2e3178a419ce6cf5ae72cd4800}{get\+Timer}} () const
+\begin{DoxyCompactList}\small\item\em Get the timer of the bomb. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBomb_a5837c0d60aea3b599a6277af9a98d727}{is\+Exploding}} () const
+\begin{DoxyCompactList}\small\item\em Get if the bomb is exploding. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBomb_ace0cb80bf0bfad1682d8d81d133919b6}{is\+Dead}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if an entity is dead. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classBomb_a3cab8c7a26cc7ce3a842d3a57e0f7944}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} dir, float dt, \mbox{\hyperlink{classMap}{Map}} \&map, int cur\+Index)
+\begin{DoxyCompactList}\small\item\em update the \mbox{\hyperlink{classEntity}{Entity}} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBomb_aa8f2eb81293b6526e6f65f42829ff171}\label{classBomb_aa8f2eb81293b6526e6f65f42829ff171}} 
+\index{Bomb@{Bomb}!Bomb@{Bomb}}
+\index{Bomb@{Bomb}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{Bomb()}{Bomb()}}
+{\footnotesize\ttfamily Bomb\+::\+Bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBomb}{Bomb}} object with position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+pos} & the position of the bomb \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBomb_a4ee80b2e3178a419ce6cf5ae72cd4800}\label{classBomb_a4ee80b2e3178a419ce6cf5ae72cd4800}} 
+\index{Bomb@{Bomb}!getTimer@{getTimer}}
+\index{getTimer@{getTimer}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{getTimer()}{getTimer()}}
+{\footnotesize\ttfamily float Bomb\+::get\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the timer of the bomb. 
+
+\begin{DoxyReturn}{Returns}
+the timer of the bomb in seconds (float) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_adc0edca6643007cd8ab744b6e2a01846}{Entity}}.
+
+\mbox{\Hypertarget{classBomb_ace0cb80bf0bfad1682d8d81d133919b6}\label{classBomb_ace0cb80bf0bfad1682d8d81d133919b6}} 
+\index{Bomb@{Bomb}!isDead@{isDead}}
+\index{isDead@{isDead}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Bomb\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if an entity is dead. 
+
+\begin{DoxyReturn}{Returns}
+true if the bomb is dead and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}{Entity}}.
+
+\mbox{\Hypertarget{classBomb_a5837c0d60aea3b599a6277af9a98d727}\label{classBomb_a5837c0d60aea3b599a6277af9a98d727}} 
+\index{Bomb@{Bomb}!isExploding@{isExploding}}
+\index{isExploding@{isExploding}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{isExploding()}{isExploding()}}
+{\footnotesize\ttfamily bool Bomb\+::is\+Exploding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get if the bomb is exploding. 
+
+\begin{DoxyReturn}{Returns}
+true if the bomb is exploding and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_addbae00214c8dc08e1bde7b2c5ed50b8}{Entity}}.
+
+\mbox{\Hypertarget{classBomb_a6accd08bd816721a392bdc1e36406c08}\label{classBomb_a6accd08bd816721a392bdc1e36406c08}} 
+\index{Bomb@{Bomb}!type@{type}}
+\index{type@{type}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual int Bomb\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type \mbox{\hyperlink{classBomb}{Bomb}} of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+the type of the entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{Entity}}.
+
+\mbox{\Hypertarget{classBomb_a3cab8c7a26cc7ce3a842d3a57e0f7944}\label{classBomb_a3cab8c7a26cc7ce3a842d3a57e0f7944}} 
+\index{Bomb@{Bomb}!update@{update}}
+\index{update@{update}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Bomb\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{dir,  }\item[{float}]{dt,  }\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map,  }\item[{int}]{cur\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update the \mbox{\hyperlink{classEntity}{Entity}} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & a \mbox{\hyperlink{classVec2f}{Vec2f}} object that contains the direction of the player \\
+\hline
+{\em dt} & a float that contains the delta time \\
+\hline
+{\em map} & a \mbox{\hyperlink{classMap}{Map}} object that contains the map \\
+\hline
+{\em cur\+Index} & an int that contains the current index of the player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}}(-\/1, -\/1) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a67fb989333c3a414038b88153eae4326}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Bomb.\+h\item 
+src/bomb.\+cpp\end{DoxyCompactItemize}

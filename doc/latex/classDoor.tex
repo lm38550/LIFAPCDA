@@ -1,0 +1,137 @@
+\hypertarget{classDoor}{}\doxysection{Door Class Reference}
+\label{classDoor}\index{Door@{Door}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDoor_a1ca8bd48de7959b921a6c869adbdd993}{Door}} (int p\+\_\+\+ID, int p\+\_\+destination\+ID, bool p\+\_\+locked, \mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDoor}{Door}} object with the given parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDoor_ade597fbca13bfdfcae1136c0ebc357d2}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the ID of the door. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDoor_aaa3d26ad613eb1c1ab7fe212d6d6197b}{get\+Destination\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the ID of the destination room. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoor_ab72060b0c9bbfa00dcc2f02952927dba}{is\+Locked}} () const
+\begin{DoxyCompactList}\small\item\em Check if the door is locked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDoor_a97b92f742efb61b20cf04cbabf58ce51}{set\+Locked}} (bool p\+\_\+locked)
+\begin{DoxyCompactList}\small\item\em Set the locked state of the door. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classDoor_abc7916047cc0d2ea7e73f77c26a58ff8}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of the door. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDoor_a018bc53005d61c1d9789527cd9b4ecef}\label{classDoor_a018bc53005d61c1d9789527cd9b4ecef}} 
+void \mbox{\hyperlink{classDoor_a018bc53005d61c1d9789527cd9b4ecef}{exploded}} ()
+\begin{DoxyCompactList}\small\item\em Explode the door. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDoor_abf7f77d5dd0da20a26e96c9776181910}{update}} (\mbox{\hyperlink{classMap}{Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Update the door. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDoor_a1ca8bd48de7959b921a6c869adbdd993}\label{classDoor_a1ca8bd48de7959b921a6c869adbdd993}} 
+\index{Door@{Door}!Door@{Door}}
+\index{Door@{Door}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{Door()}{Door()}}
+{\footnotesize\ttfamily Door\+::\+Door (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+\+ID,  }\item[{int}]{p\+\_\+destination\+ID,  }\item[{bool}]{p\+\_\+locked,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classDoor}{Door}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+\+ID} & the ID of the door \\
+\hline
+{\em p\+\_\+destination\+ID} & the ID of the destination room \\
+\hline
+{\em p\+\_\+locked} & the locked state of the door \\
+\hline
+{\em p\+\_\+pos} & the position of the door \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDoor_aaa3d26ad613eb1c1ab7fe212d6d6197b}\label{classDoor_aaa3d26ad613eb1c1ab7fe212d6d6197b}} 
+\index{Door@{Door}!getDestinationID@{getDestinationID}}
+\index{getDestinationID@{getDestinationID}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{getDestinationID()}{getDestinationID()}}
+{\footnotesize\ttfamily int Door\+::get\+Destination\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the ID of the destination room. 
+
+\begin{DoxyReturn}{Returns}
+int the ID of the destination room 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoor_ade597fbca13bfdfcae1136c0ebc357d2}\label{classDoor_ade597fbca13bfdfcae1136c0ebc357d2}} 
+\index{Door@{Door}!getID@{getID}}
+\index{getID@{getID}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int Door\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the ID of the door. 
+
+\begin{DoxyReturn}{Returns}
+int the ID of the door 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoor_abc7916047cc0d2ea7e73f77c26a58ff8}\label{classDoor_abc7916047cc0d2ea7e73f77c26a58ff8}} 
+\index{Door@{Door}!getPos@{getPos}}
+\index{getPos@{getPos}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Door\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the position of the door. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}} the position of the door 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoor_ab72060b0c9bbfa00dcc2f02952927dba}\label{classDoor_ab72060b0c9bbfa00dcc2f02952927dba}} 
+\index{Door@{Door}!isLocked@{isLocked}}
+\index{isLocked@{isLocked}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{isLocked()}{isLocked()}}
+{\footnotesize\ttfamily bool Door\+::is\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the door is locked. 
+
+\begin{DoxyReturn}{Returns}
+bool true if the door is locked and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDoor_a97b92f742efb61b20cf04cbabf58ce51}\label{classDoor_a97b92f742efb61b20cf04cbabf58ce51}} 
+\index{Door@{Door}!setLocked@{setLocked}}
+\index{setLocked@{setLocked}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{setLocked()}{setLocked()}}
+{\footnotesize\ttfamily void Door\+::set\+Locked (\begin{DoxyParamCaption}\item[{bool}]{p\+\_\+locked }\end{DoxyParamCaption})}
+
+
+
+Set the locked state of the door. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+locked} & the locked state of the door \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDoor_abf7f77d5dd0da20a26e96c9776181910}\label{classDoor_abf7f77d5dd0da20a26e96c9776181910}} 
+\index{Door@{Door}!update@{update}}
+\index{update@{update}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Door\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map }\end{DoxyParamCaption})}
+
+
+
+Update the door. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Door.\+h\item 
+src/door.\+cpp\end{DoxyCompactItemize}

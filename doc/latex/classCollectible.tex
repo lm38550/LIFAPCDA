@@ -1,0 +1,155 @@
+\hypertarget{classCollectible}{}\doxysection{Collectible Class Reference}
+\label{classCollectible}\index{Collectible@{Collectible}}
+
+
+Inheritance diagram for Collectible\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classCollectible__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collectible\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classCollectible__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCollectible_affffe9216558399616c203902d8f1273}{type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type \mbox{\hyperlink{classCollectible}{Collectible}} of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCollectible_a0423994ff430c774511f67ad7781490c}{Collectible}} (\mbox{\hyperlink{classVec2f}{Vec2f}} pos, int value, int id)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCollectible}{Collectible}} object with the given parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCollectible_ae93f1851dde928d216e60cfd3966162b}{get\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Get the value of the \mbox{\hyperlink{classCollectible}{Collectible}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCollectible_a6cd6a1467f45c6c7c56137b17cd2b79c}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the id of the \mbox{\hyperlink{classCollectible}{Collectible}} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCollectible_a216dfe0dbe3a58cbfe8a0a076902836b}{is\+Dead}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if an entity is dead. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classCollectible_a77c5f383f0062585b859560c2807f341}{update}} (\mbox{\hyperlink{classVec2f}{Vec2f}} dir, float dt, \mbox{\hyperlink{classMap}{Map}} \&map, int cur\+Index)
+\begin{DoxyCompactList}\small\item\em update the \mbox{\hyperlink{classEntity}{Entity}} object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCollectible_a0423994ff430c774511f67ad7781490c}\label{classCollectible_a0423994ff430c774511f67ad7781490c}} 
+\index{Collectible@{Collectible}!Collectible@{Collectible}}
+\index{Collectible@{Collectible}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{Collectible()}{Collectible()}}
+{\footnotesize\ttfamily Collectible\+::\+Collectible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{pos,  }\item[{int}]{value,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCollectible}{Collectible}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position of the collectible \\
+\hline
+{\em value} & the value of the collectible \\
+\hline
+{\em id} & the id of the collectible \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCollectible_a6cd6a1467f45c6c7c56137b17cd2b79c}\label{classCollectible_a6cd6a1467f45c6c7c56137b17cd2b79c}} 
+\index{Collectible@{Collectible}!getId@{getId}}
+\index{getId@{getId}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Collectible\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the id of the \mbox{\hyperlink{classCollectible}{Collectible}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the id of the collectible 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollectible_ae93f1851dde928d216e60cfd3966162b}\label{classCollectible_ae93f1851dde928d216e60cfd3966162b}} 
+\index{Collectible@{Collectible}!getValue@{getValue}}
+\index{getValue@{getValue}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily int Collectible\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the value of the \mbox{\hyperlink{classCollectible}{Collectible}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the value of the collectible 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCollectible_a216dfe0dbe3a58cbfe8a0a076902836b}\label{classCollectible_a216dfe0dbe3a58cbfe8a0a076902836b}} 
+\index{Collectible@{Collectible}!isDead@{isDead}}
+\index{isDead@{isDead}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Collectible\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if an entity is dead. 
+
+\begin{DoxyReturn}{Returns}
+bool true if the collectible is dead and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a513f0590fc7ef8fa82056ff2ebe5e5f5}{Entity}}.
+
+\mbox{\Hypertarget{classCollectible_affffe9216558399616c203902d8f1273}\label{classCollectible_affffe9216558399616c203902d8f1273}} 
+\index{Collectible@{Collectible}!type@{type}}
+\index{type@{type}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily int Collectible\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Type \mbox{\hyperlink{classCollectible}{Collectible}} of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{Entity}}.
+
+\mbox{\Hypertarget{classCollectible_a77c5f383f0062585b859560c2807f341}\label{classCollectible_a77c5f383f0062585b859560c2807f341}} 
+\index{Collectible@{Collectible}!update@{update}}
+\index{update@{update}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Collectible\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{dir,  }\item[{float}]{dt,  }\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map,  }\item[{int}]{cur\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update the \mbox{\hyperlink{classEntity}{Entity}} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & a \mbox{\hyperlink{classVec2f}{Vec2f}} object that contains the direction of the player \\
+\hline
+{\em dt} & a float that contains the delta time \\
+\hline
+{\em map} & a \mbox{\hyperlink{classMap}{Map}} object that contains the map \\
+\hline
+{\em cur\+Index} & an int that contains the current index of the player\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}}(-\/1, -\/1) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a67fb989333c3a414038b88153eae4326}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Collectible.\+h\item 
+src/collectible.\+cpp\end{DoxyCompactItemize}

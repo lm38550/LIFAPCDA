@@ -1,0 +1,124 @@
+\hypertarget{classItem}{}\doxysection{Item Class Reference}
+\label{classItem}\index{Item@{Item}}
+
+
+Inheritance diagram for Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classItem__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classItem_ae4d76ff035f6f085974c59199ef5a048}{Item}} (int quantity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classItem}{Item}} object with quantity. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classItem_ac6021abcb2d2f68df2c64b680d569894}{id}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Type of the \mbox{\hyperlink{classItem}{Item}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classItem_a6aa6347a8883e63dd169c069202847ec}{get\+Quantity}} ()
+\begin{DoxyCompactList}\small\item\em Get the Quantity of the \mbox{\hyperlink{classItem}{Item}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItem_a015f85045077196ff56e83d702ec03b5}{set\+Quantity}} (int quantity)
+\begin{DoxyCompactList}\small\item\em Set the Quantity of the \mbox{\hyperlink{classItem}{Item}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classItem_a1c4c68929d8e51484862a319cb07639f}{use}} (\mbox{\hyperlink{classMap}{Map}} \&map)=0
+\begin{DoxyCompactList}\small\item\em Use the item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classItem_a11663c84075b78c3ae5e30fdfcd7c458}\label{classItem_a11663c84075b78c3ae5e30fdfcd7c458}} 
+virtual \mbox{\hyperlink{classItem_a11663c84075b78c3ae5e30fdfcd7c458}{$\sim$\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classItem}{Item}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItem_ac2cc2f32abc915a8aacc4a0c0a976d3e}\label{classItem_ac2cc2f32abc915a8aacc4a0c0a976d3e}} 
+int {\bfseries m\+\_\+quantity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classItem_ae4d76ff035f6f085974c59199ef5a048}\label{classItem_ae4d76ff035f6f085974c59199ef5a048}} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classItem}{Item}} object with quantity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & the quantity of the item \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classItem_a6aa6347a8883e63dd169c069202847ec}\label{classItem_a6aa6347a8883e63dd169c069202847ec}} 
+\index{Item@{Item}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Item\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Quantity of the \mbox{\hyperlink{classItem}{Item}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the quantity of the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItem_ac6021abcb2d2f68df2c64b680d569894}\label{classItem_ac6021abcb2d2f68df2c64b680d569894}} 
+\index{Item@{Item}!id@{id}}
+\index{id@{id}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily virtual int Item\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Type of the \mbox{\hyperlink{classItem}{Item}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the item 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classLantern_a93822e8252bf2ae9576d9a9c8f289790}{Lantern}}, \mbox{\hyperlink{classBow_ae2d6700c52735efb55300fa8a13933b5}{Bow}}, and \mbox{\hyperlink{classBombBag_a2fe068a688753773f957eff4df355b3e}{Bomb\+Bag}}.
+
+\mbox{\Hypertarget{classItem_a015f85045077196ff56e83d702ec03b5}\label{classItem_a015f85045077196ff56e83d702ec03b5}} 
+\index{Item@{Item}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily void Item\+::set\+Quantity (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Set the Quantity of the \mbox{\hyperlink{classItem}{Item}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & the quantity of the item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classItem_a1c4c68929d8e51484862a319cb07639f}\label{classItem_a1c4c68929d8e51484862a319cb07639f}} 
+\index{Item@{Item}!use@{use}}
+\index{use@{use}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily virtual void Item\+::use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Use the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classLantern_a3e3a00f03f15042b0e76203e17afe93c}{Lantern}}, \mbox{\hyperlink{classBow_ae28d9874589c79e1eebc7f80635454ae}{Bow}}, and \mbox{\hyperlink{classBombBag_a0435239f613a9e3603a72fe7697ba637}{Bomb\+Bag}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Item.\+h\item 
+src/item.\+cpp\end{DoxyCompactItemize}

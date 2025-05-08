@@ -1,0 +1,142 @@
+\hypertarget{classInventory}{}\doxysection{Inventory Class Reference}
+\label{classInventory}\index{Inventory@{Inventory}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classItem}{Item}} $\ast$ \mbox{\hyperlink{classInventory_ad0519c5406f900ae9128f4445b455b78}{get\+Item}} (int id) const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classItem}{Item}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_affaa1aa5948d2c61ff10680f902d96f9}{add\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item)
+\begin{DoxyCompactList}\small\item\em add item to inventory \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_af024385cf1ea01194f17a84e8f902c20}{add\+To\+Item}} (int id, int nb)
+\begin{DoxyCompactList}\small\item\em Add to an item the number of item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_af798cf60f2262a770edbe683b5570f23}{add\+Abricot}} (int nb)
+\begin{DoxyCompactList}\small\item\em add nb abricot in the inventory \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classInventory_a0a73162acb0900c9775c1f973f379e76}{get\+Abricot}} () const
+\begin{DoxyCompactList}\small\item\em Get the Abricot object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInventory_ae073bf196fa8e85169166495c477298f}{set\+Abricot}} (int abricot)
+\begin{DoxyCompactList}\small\item\em Set the Abricot object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInventory_aa214bb3b61548c26c8586e3d2d5b1bff}{has\+Item}} (int id) const
+\begin{DoxyCompactList}\small\item\em Get to know if an item is in the inventory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInventory_a6c6dfcb6d977c74a7abf46809e892e3d}\label{classInventory_a6c6dfcb6d977c74a7abf46809e892e3d}} 
+\mbox{\hyperlink{classInventory_a6c6dfcb6d977c74a7abf46809e892e3d}{$\sim$\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classInventory}{Inventory}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInventory_af798cf60f2262a770edbe683b5570f23}\label{classInventory_af798cf60f2262a770edbe683b5570f23}} 
+\index{Inventory@{Inventory}!addAbricot@{addAbricot}}
+\index{addAbricot@{addAbricot}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{addAbricot()}{addAbricot()}}
+{\footnotesize\ttfamily void Inventory\+::add\+Abricot (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+add nb abricot in the inventory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & the number of abricot to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInventory_affaa1aa5948d2c61ff10680f902d96f9}\label{classInventory_affaa1aa5948d2c61ff10680f902d96f9}} 
+\index{Inventory@{Inventory}!addItem@{addItem}}
+\index{addItem@{addItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily void Inventory\+::add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+add item to inventory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the item to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInventory_af024385cf1ea01194f17a84e8f902c20}\label{classInventory_af024385cf1ea01194f17a84e8f902c20}} 
+\index{Inventory@{Inventory}!addToItem@{addToItem}}
+\index{addToItem@{addToItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{addToItem()}{addToItem()}}
+{\footnotesize\ttfamily void Inventory\+::add\+To\+Item (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+Add to an item the number of item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the item \\
+\hline
+{\em nb} & the number of item to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInventory_a0a73162acb0900c9775c1f973f379e76}\label{classInventory_a0a73162acb0900c9775c1f973f379e76}} 
+\index{Inventory@{Inventory}!getAbricot@{getAbricot}}
+\index{getAbricot@{getAbricot}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{getAbricot()}{getAbricot()}}
+{\footnotesize\ttfamily int Inventory\+::get\+Abricot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Abricot object. 
+
+\begin{DoxyReturn}{Returns}
+int the number of abricot in the inventory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInventory_ad0519c5406f900ae9128f4445b455b78}\label{classInventory_ad0519c5406f900ae9128f4445b455b78}} 
+\index{Inventory@{Inventory}!getItem@{getItem}}
+\index{getItem@{getItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classItem}{Item}} $\ast$ Inventory\+::get\+Item (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classItem}{Item}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item$\ast$ the item object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInventory_aa214bb3b61548c26c8586e3d2d5b1bff}\label{classInventory_aa214bb3b61548c26c8586e3d2d5b1bff}} 
+\index{Inventory@{Inventory}!hasItem@{hasItem}}
+\index{hasItem@{hasItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{hasItem()}{hasItem()}}
+{\footnotesize\ttfamily bool Inventory\+::has\+Item (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Get to know if an item is in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the item\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the item is in the inventory and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInventory_ae073bf196fa8e85169166495c477298f}\label{classInventory_ae073bf196fa8e85169166495c477298f}} 
+\index{Inventory@{Inventory}!setAbricot@{setAbricot}}
+\index{setAbricot@{setAbricot}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{setAbricot()}{setAbricot()}}
+{\footnotesize\ttfamily void Inventory\+::set\+Abricot (\begin{DoxyParamCaption}\item[{int}]{abricot }\end{DoxyParamCaption})}
+
+
+
+Set the Abricot object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abricot} & the number of abricot to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Inventory.\+h\item 
+src/inventory.\+cpp\end{DoxyCompactItemize}

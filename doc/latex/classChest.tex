@@ -1,0 +1,234 @@
+\hypertarget{classChest}{}\doxysection{Chest Class Reference}
+\label{classChest}\index{Chest@{Chest}}
+
+
+Inheritance diagram for Chest\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classChest__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Chest\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classChest__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classChest_a4d2e370dddcaffa6aabc948392947680}{type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type \mbox{\hyperlink{classChest}{Chest}} of the \mbox{\hyperlink{classEntity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classChest_a7bc29748ccf0ba8e3fa0ff7d2c60e188}\label{classChest_a7bc29748ccf0ba8e3fa0ff7d2c60e188}} 
+\mbox{\hyperlink{classChest_a7bc29748ccf0ba8e3fa0ff7d2c60e188}{Chest}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classChest}{Chest}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChest_a506528de2554b0c2f3d3422bc98e5623}{Chest}} (int p\+\_\+contain\+ID, int p\+\_\+texture\+ID, \mbox{\hyperlink{classVec2f}{Vec2f}} p\+\_\+pos, bool p\+\_\+visible)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classChest}{Chest}} object with the given parameters. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classChest_a11a7b32aa9ed6979b89aa9f9c646e869}{get\+Contain\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the Contain ID object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChest_a13f2389824b4a1c7a6d64a044bbb9a0b}{set\+Contain\+ID}} (int p\+\_\+contain\+ID)
+\begin{DoxyCompactList}\small\item\em Set the Contain ID object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChest_a18d931ea1a336551fc8572696f3af109}{get\+Texture\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the Texture ID object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVec2f}{Vec2f}} \mbox{\hyperlink{classChest_ab90fe36c89c1349fde555f9b1dcfce73}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Get the Pos object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classChest_a4c67e2e7cf5124ae018caccea3384692}{is\+Visible}} () const
+\begin{DoxyCompactList}\small\item\em Get to know if the object is visible. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChest_a442b90abd273f16b764ea31776a7e454}{set\+Visible}} (bool p\+\_\+visible)
+\begin{DoxyCompactList}\small\item\em Set the visibility of the object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classChest_aa5c59fcd021e4d53e889a47dc8d06ed2}{is\+Walkable}} () const
+\begin{DoxyCompactList}\small\item\em get to know if the entity can be walked on \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChest_adbd56ff7e1adb5b96043396977f533d5}{is\+Open}} ()
+\begin{DoxyCompactList}\small\item\em Check if the chest is open. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classChest_af02ac37ce5c5ae5558eece9fa5eb57b0}{Interact}} (\mbox{\hyperlink{classMap}{Map}} \&map)
+\begin{DoxyCompactList}\small\item\em Receive an interaction from player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChest_a506528de2554b0c2f3d3422bc98e5623}\label{classChest_a506528de2554b0c2f3d3422bc98e5623}} 
+\index{Chest@{Chest}!Chest@{Chest}}
+\index{Chest@{Chest}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{Chest()}{Chest()}}
+{\footnotesize\ttfamily Chest\+::\+Chest (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+contain\+ID,  }\item[{int}]{p\+\_\+texture\+ID,  }\item[{\mbox{\hyperlink{classVec2f}{Vec2f}}}]{p\+\_\+pos,  }\item[{bool}]{p\+\_\+visible }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classChest}{Chest}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+contain\+ID} & the id of the item contained in the chest \\
+\hline
+{\em p\+\_\+texture\+ID} & the id of the texture of the chest \\
+\hline
+{\em p\+\_\+pos} & the position of the chest \\
+\hline
+{\em p\+\_\+visible} & the visibility of the chest \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChest_a11a7b32aa9ed6979b89aa9f9c646e869}\label{classChest_a11a7b32aa9ed6979b89aa9f9c646e869}} 
+\index{Chest@{Chest}!getContainID@{getContainID}}
+\index{getContainID@{getContainID}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{getContainID()}{getContainID()}}
+{\footnotesize\ttfamily int Chest\+::get\+Contain\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Contain ID object. 
+
+\begin{DoxyReturn}{Returns}
+int the id of the item contained in the chest 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a40708f946c2957fdf593ed09ac81fbf1}{Entity}}.
+
+\mbox{\Hypertarget{classChest_ab90fe36c89c1349fde555f9b1dcfce73}\label{classChest_ab90fe36c89c1349fde555f9b1dcfce73}} 
+\index{Chest@{Chest}!getPos@{getPos}}
+\index{getPos@{getPos}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVec2f}{Vec2f}} Chest\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Pos object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVec2f}{Vec2f}} the position of the chest 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChest_a18d931ea1a336551fc8572696f3af109}\label{classChest_a18d931ea1a336551fc8572696f3af109}} 
+\index{Chest@{Chest}!getTextureID@{getTextureID}}
+\index{getTextureID@{getTextureID}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{getTextureID()}{getTextureID()}}
+{\footnotesize\ttfamily int Chest\+::get\+Texture\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Texture ID object. 
+
+\begin{DoxyReturn}{Returns}
+int the id of the texture of the chest 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChest_af02ac37ce5c5ae5558eece9fa5eb57b0}\label{classChest_af02ac37ce5c5ae5558eece9fa5eb57b0}} 
+\index{Chest@{Chest}!Interact@{Interact}}
+\index{Interact@{Interact}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Chest\+::\+Interact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMap}{Map}} \&}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Receive an interaction from player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & the map of the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a113ff3bb02e0deec5d80faaca10e20ba}{Entity}}.
+
+\mbox{\Hypertarget{classChest_adbd56ff7e1adb5b96043396977f533d5}\label{classChest_adbd56ff7e1adb5b96043396977f533d5}} 
+\index{Chest@{Chest}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool Chest\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the chest is open. 
+
+\begin{DoxyReturn}{Returns}
+bool true if the chest is open and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChest_a4c67e2e7cf5124ae018caccea3384692}\label{classChest_a4c67e2e7cf5124ae018caccea3384692}} 
+\index{Chest@{Chest}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{isVisible()}{isVisible()}}
+{\footnotesize\ttfamily bool Chest\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get to know if the object is visible. 
+
+\begin{DoxyReturn}{Returns}
+bool the visibility of the chest 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChest_aa5c59fcd021e4d53e889a47dc8d06ed2}\label{classChest_aa5c59fcd021e4d53e889a47dc8d06ed2}} 
+\index{Chest@{Chest}!isWalkable@{isWalkable}}
+\index{isWalkable@{isWalkable}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{isWalkable()}{isWalkable()}}
+{\footnotesize\ttfamily bool Chest\+::is\+Walkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get to know if the entity can be walked on 
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a2e547bb6809b78266d9e218ca09a198c}{Entity}}.
+
+\mbox{\Hypertarget{classChest_a13f2389824b4a1c7a6d64a044bbb9a0b}\label{classChest_a13f2389824b4a1c7a6d64a044bbb9a0b}} 
+\index{Chest@{Chest}!setContainID@{setContainID}}
+\index{setContainID@{setContainID}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{setContainID()}{setContainID()}}
+{\footnotesize\ttfamily void Chest\+::set\+Contain\+ID (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+contain\+ID }\end{DoxyParamCaption})}
+
+
+
+Set the Contain ID object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+contain\+ID} & the id of the item contained in the chest \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classChest_a442b90abd273f16b764ea31776a7e454}\label{classChest_a442b90abd273f16b764ea31776a7e454}} 
+\index{Chest@{Chest}!setVisible@{setVisible}}
+\index{setVisible@{setVisible}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{setVisible()}{setVisible()}}
+{\footnotesize\ttfamily void Chest\+::set\+Visible (\begin{DoxyParamCaption}\item[{bool}]{p\+\_\+visible }\end{DoxyParamCaption})}
+
+
+
+Set the visibility of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+visible} & the visibility of the chest \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classChest_a4d2e370dddcaffa6aabc948392947680}\label{classChest_a4d2e370dddcaffa6aabc948392947680}} 
+\index{Chest@{Chest}!type@{type}}
+\index{type@{type}!Chest@{Chest}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual int Chest\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Type \mbox{\hyperlink{classChest}{Chest}} of the \mbox{\hyperlink{classEntity}{Entity}} object. 
+
+\begin{DoxyReturn}{Returns}
+int the type of the entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_a6646c0c8f6033cc670f416841606f062}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Chest.\+h\item 
+src/chest.\+cpp\end{DoxyCompactItemize}

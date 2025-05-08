@@ -1,5 +1,4 @@
 # L'Incroyable Fermier Assassins Partant Chercher Des Abricots (LIFAPCDA)
-## ID du projet git : 28469
 
 ### Louis MOREL p2100444 | Jérémy BOUILLY p2103485 | Adrien SALLERIN p2102184
 
